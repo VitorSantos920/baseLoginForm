@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BASE - Login</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BASE - Login</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
 
-        <!-- Image Div -->
-        <div class="esquerda">   
-            <img src="./assets/img/logo.jpeg" alt="" title="baseLogo">
+        <div class="container">
+
+            <!-- Image Div -->
+            <div class="esquerda">   
+                <img src="./assets/img/logo.jpeg" alt="" title="baseLogo">
+            </div>
+            
+            <!-- Form Div -->
+            <div class="direita">
+                <form action="#" class="form" method="post" onsubmit="login()">
+                    <fieldset class="field email">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" required>
+                    </fieldset> <!-- Email -->
+
+                    <fieldset class="field senha">
+                        <label for="senha">Senha: </label>
+                        <input type="password" id="senha" required>
+                    </fieldset> <!-- Senha -->
+
+                    <fieldset class="field check">
+                        <input type="checkbox" name="checkbox"  id="cb">
+                        <label for="cb">Continuar logado?</label>
+                    </fieldset> <!-- Checkbox -->
+
+                    <fieldset class="field submit">
+                        <input type="submit" id="submit" value="Login">
+                    </fieldset> <!-- Submit -->
+                </form>
+            </div>
+
         </div>
         
-        <!-- Form Div -->
-        <div class="direita">
-            <form action="#" class="form" method="post">
-                <fieldset class="field email">
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" required>
-                </fieldset> <!-- Email -->
+        <script src="./assets/js/script.js"></script>
 
-                <fieldset class="field senha">
-                    <label for="senha">Senha: </label>
-                    <input type="password" id="senha" required>
-                </fieldset> <!-- Senha -->
-
-                <fieldset class="field check">
-                    <label for="cb">Continuar logado?</label>
-                    <input type="checkbox" name="checkbox"  id="cb">
-                </fieldset> <!-- Checkbox -->
-
-                <fieldset class="field submit">
-                    <input type="submit" value="Login">
-                </fieldset> <!-- Submit -->
-            </form>
-        </div>
-
-    </div>
-    <script src="./assets/js/script.js"></script>
-</body>
+    </body>
 </html>
 
