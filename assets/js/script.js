@@ -30,4 +30,3 @@ function login(){
     if (!verifier)
         window.alert("Login inválido: Email e/ou senha inválidos!");
 }
-
